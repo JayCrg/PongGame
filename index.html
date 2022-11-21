@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pong</title>
+        <script src="code.js"></script>
+        <style>
+            body {
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+            }
+            #canvas {
+            
+                margin: auto;
+            }
+            svg{
+                background-color: white;
+            }
+
+            #point{
+                color: white;
+                font-size: 27px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="canvas">
+            <svg width="700" height="550"> 
+                <circle cx="350" cy="275" r="20" fill="red" id='bola'/>
+                <rect x="50" y="275" width="10" height="80" fill="blue" id='jugador1'/>
+                <rect x="650" y="275" width="10" height="80" fill="blue" id='jugador2'/>
+                <rect x="350" y="0" width="2" height="700" fill="grey" id='jugador1'/>
+             </svg> 
+        </div>
+         <div id="point">
+            <h2>Puntuacion</h2>
+            <span id="p1">0</span> - <span id="p2">0</span>
+        </div>
+    </body> 
+</html>
